@@ -1,1 +1,45 @@
 # MIke-s-Catalog-PC
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Tecnológico</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>TechCatalog</h1>
+    <p>Explora el mundo de la tecnología</p>
+  </header>
+
+  <main class="container">
+    <h2>Catálogo de dispositivos</h2>
+
+    <input
+      type="search"
+      id="busqueda"
+      placeholder="Buscar dispositivos..."
+      aria-label="Buscar dispositivos"
+    >
+
+    <nav class="filtros" aria-label="Filtrar por categoría">
+      <button class="activo" data-categoria="Todos">Todos</button>
+      <button data-categoria="Desktop">Desktop</button>
+      <button data-categoria="Workstation">Workstation</button>
+      <button data-categoria="Laptop">Laptop</button>
+      <button data-categoria="Móviles">Móviles</button>
+    </nav>
+
+    <section id="catalogo" class="catalogo">
+      <!-- JavaScript generará las tarjetas aquí -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Catálogo Tecnológico | Proyecto educativo</p>
+  </footer>
+</body>
+</html>
